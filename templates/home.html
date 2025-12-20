@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLwaf - Request Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- Styles moved to styles.css for cleaner structure and B&W theme support -->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="/" class="logo">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">MLwaf</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Checker Section -->
+    <section class="checker-section">
+        <div class="cyber-grid"></div>
+
+        <div class="checker-container">
+            <div class="checker-header">
+                <h2>Security Request Checker</h2>
+                <p>Enter your request below to analyze potential security threats using our advanced AI detection
+                    system.</p>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="user-input" placeholder="Enter your request to check for potential threats..."
+                    autocomplete="off">
+                <button class="neon-btn" id="submit-btn">Analyze Request</button>
+            </div>
+
+            <div id="loading">
+                <div class="loading-spinner"></div>
+                Analyzing request pattern...
+            </div>
+
+            <div id="result"></div>
+
+            <!-- Replace the security-tips div with this -->
+            <div class="security-tips">
+                <div class="tip-header">
+                    <h3>🛡️ Security Intelligence Hub</h3>
+                    <div class="tip-nav">
+                        <button class="tip-nav-btn prev">←</button>
+                        <button class="tip-nav-btn next">→</button>
+                    </div>
+                </div>
+                <div class="tip-container">
+                    <!-- Threat Stats -->
+                    <div class="tip-slide active">
+                        <div class="tip-icon">🌐</div>
+                        <div class="tip-content">
+                            <h4>Real-time Threats</h4>
+                            <p>Every 39 seconds, a cyber attack occurs. That's over 2,200 attacks per day.<br>Stay
+                                vigilant.</p>
+                        </div>
+                    </div>
+
+                    <!-- AI Defense -->
+                    <div class="tip-slide">
+                        <div class="tip-icon">🤖</div>
+                        <div class="tip-content">
+                            <h4>AI vs Hackers</h4>
+                            <p>AI systems can detect and respond to threats 60x faster than traditional methods.<br>The
+                                future is now.</p>
+                        </div>
+                    </div>
+
+                    <!-- Smart Tip -->
+                    <div class="tip-slide">
+                        <div class="tip-icon">💡</div>
+                        <div class="tip-content">
+                            <h4>Pro Tip: Input Validation</h4>
+                            <p>Always sanitize user inputs. 85% of successful attacks exploit unsanitized
+                                inputs.<br>Don't be the next victim.</p>
+                        </div>
+                    </div>
+
+                    <!-- Crypto Attacks -->
+                    <div class="tip-slide">
+                        <div class="tip-icon">🎯</div>
+                        <div class="tip-content">
+                            <h4>DeFi Under Attack</h4>
+                            <p>Over $3.8B in crypto assets were stolen in 2022.<br>Smart contract security is more
+                                crucial than ever.</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Defense -->
+                    <div class="tip-slide">
+                        <div class="tip-icon">🚀</div>
+                        <div class="tip-content">
+                            <h4>Speed Matters</h4>
+                            <p>The first 10 seconds of an attack are critical.<br>Our AI responds in under 100ms to stop
+                                threats instantly.</p>
+                        </div>
+                    </div>
+
+                    <!-- Zero Day -->
+                    <div class="tip-slide">
+                        <div class="tip-icon">🕷️</div>
+                        <div class="tip-content">
+                            <h4>Zero-Day Threats</h4>
+                            <p>Unknown vulnerabilities can stay hidden for 287 days on average.<br>AI pattern detection
+                                is your best defense.</p>
+                        </div>
+                    </div>
+
+                    <!-- Smart Contract -->
+                    <div class="tip-slide">
+                        <div class="tip-icon">📜</div>
+                        <div class="tip-content">
+                            <h4>Contract Security</h4>
+                            <p>96% of smart contracts contain at least one vulnerability.<br>Always verify before
+                                deploying.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ransomware -->
+                    <div class="tip-slide">
+                        <div class="tip-icon">🔒</div>
+                        <div class="tip-content">
+                            <h4>Ransomware Alert</h4>
+                            <p>A company falls victim to ransomware every 11 seconds.<br>Prevention is better than cure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="{{ url_for('static', filename='home.js') }}" defer></script>
+</body>
+
+</html>

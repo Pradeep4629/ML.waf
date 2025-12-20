@@ -1,0 +1,14 @@
+2025-12-20 09:32:29 - ihihwriowbgob - valid
+2025-12-20 09:33:56 - " ot 1=1" - valid
+2025-12-20 09:44:53 - <script\x20type="text/javascript">javascript:alert(1);</script> - malicious(signature)
+2025-12-20 10:24:13 - -- or #  - malicious(signature)
+2025-12-20 10:25:16 - hello hi - valid
+2025-12-20 10:31:11 - hello hi - valid
+2025-12-20 10:31:36 - " OR 1 = 1 -- - - malicious(signature)
+2025-12-20 10:32:58 - </scrip</script>t><img src =q onerror=prompt(8)> - malicious(signature)
+2025-12-20 10:34:46 - </scrip</script>t><img src =q onerror=prompt(8)> - malicious(signature)
+2025-12-20 10:35:26 - </scrip</script>t><img src =q onerror=prompt(8)> - malicious(signature)
+2025-12-20 10:35:32 - pradeep - valid
+2025-12-20 10:36:18 - aaaaaaaaaaaaaaaaaaaaaaaaa,oku , - valid
+2025-12-20 10:36:54 - <sai> - valid
+2025-12-20 10:37:20 - <script\x20type="text/javascript">javascript:alert(1);</script> - malicious(signature)
